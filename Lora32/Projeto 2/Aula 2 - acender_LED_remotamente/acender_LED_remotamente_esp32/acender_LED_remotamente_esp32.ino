@@ -19,14 +19,14 @@
 #define LED         17
 
 // Wi-fi credentials
-const char* ssid = "FamilyLDD";
-const char* password = "JOAO0316@@!";
+const char* ssid = "NOME_DA_REDE_WIFI";
+const char* password = "SENHA_REDE_WIFI";
 
 //MQTT Broker credentials
-const char* mqtt_server = "ddaf7069e80744b9a67ba201c364964b.s2.eu.hivemq.cloud";
-int mqtt_server_port = 8883;
-const char* hiveIOTUser = "etegoiana";
-const char* hiveIOTPassword = "ETEgoiana40";
+const char* mqtt_server = "ENDERECO_NUVEM";
+int mqtt_server_port = PORTA;
+const char* hiveIOTUser = "USUARIO_NUVEM";
+const char* hiveIOTPassword = "SENHA_USUARIO_NUVEM";
 
 WiFiClientSecure espClient;   // for no secure connection use WiFiClient instead of WiFiClientSecure 
 PubSubClient client(espClient);

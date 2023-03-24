@@ -24,9 +24,9 @@ enum MqttSubscriptionState {
   String topicName = '';
   String messageSend;
   //MQTT Connection
-  String mqttUrl = 'ddaf7069e80744b9a67ba201c364964b.s2.eu.hivemq.cloud';
-  String user = 'etegoiana';
-  String password = 'ETEgoiana40';
+  String mqttUrl = 'ENDERECO_NUVEM';
+  String user = 'USUARIO';
+  String password = 'SENHA';
   int port = 8883;
 
   MQTTClientWrapper(this.topicName, this.messageSend);
