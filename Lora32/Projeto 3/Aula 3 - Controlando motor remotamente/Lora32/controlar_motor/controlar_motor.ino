@@ -19,14 +19,14 @@
 #define MOTOR         17
 
 // Wi-fi credentials
-const char* ssid = "FamilyLDD";
-const char* password = "JOAO0316@@!";
+const char* ssid = "SSID";                      // <------ Alterar
+const char* password = "PASSWORD_WIFI";         // <------ Alterar
 
 //MQTT Broker credentials
-const char* mqtt_server = "231ccd91865148f78345c07e2d7e799e.s2.eu.hivemq.cloud";
+const char* mqtt_server = "HIVEMQ_CLOUD_LINK";          // <------ Alterar
 int mqtt_server_port = 8883;
-const char* hiveIOTUser = "submarino";
-const char* hiveIOTPassword = "Espaco40ETE@@!";
+const char* hiveIOTUser = "USER_HIVEMQ";               // <------ Alterar
+const char* hiveIOTPassword = "PASSWORD_USER_HIVEMQ";  // <------ Alterar
 
 WiFiClientSecure espClient;   // for no secure connection use WiFiClient instead of WiFiClientSecure 
 PubSubClient client(espClient);
@@ -37,7 +37,7 @@ char bufferMessage[MSG_BUFFER_SIZE];
 int value = 0; // Message counter
 
 //Basic Sensors configuration
-const char* topicBasicSensors = "submarino";
+const char* topicBasicSensors = "TOPIC_NAME_TO_POST_MESSAGE";        // <------ Alterar
 
 //Topic to publish first communication
 const char* topicNameStablishConnection = "firstAttemptConnection";
